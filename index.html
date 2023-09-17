@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body style="background-color: #8cc461">
+    <div class="header">
+      <section id="one">
+        ROCK<br />
+        PAPER<br />
+        SCISSORS
+      </section>
+
+      <div class="score">
+        <div id="computer_score">
+          COMPUTER <br />SCORE
+          <div id="computer_score_js">0</div>
+        </div>
+        <div id="my_score">
+          YOUR<br />
+          SCORE
+          <div id="myscore_js">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_main">
+      <div class="footer">
+        <div class="stone">
+          <img src="blue circle.png" />
+          <div class="stone_img">
+            <img src="stone.png" />
+          </div>
+        </div>
+        <div class="scissor">
+          <img src="purple circle.png" />
+          <div class="scissor_img">
+            <img src="scissor.png" />
+          </div>
+        </div>
+        <div class="paper">
+          <img src="yellow circle.png" />
+          <div class="paper_img">
+            <img src="paper.png" />
+          </div>
+        </div>
+        <div id="line_stoneAndsciss"></div>
+      <div id="line_stoneAndpaper"></div>
+      <div id="line_paperAndsciss"></div>
+      </div>
+   
+      <div class="footer_win" style="display: none;">
+        
+        <div class="userSide">
+          <div class="userText">
+            YOU PICKED
+          </div>
+         <div class="waveStyling_user"  style="display: none">
+          <img src="ellipse1.png" class="el-1">
+          <img src="ellipse2.png" class="el-2">
+          <img src="ellipse3.png" class="el-3">
+        </div>
+        
+          <img src="" class="userSideLargeIMG">
+         
+         
+          <div class="userSide_img">
+            <img src="" class="userSideSmallIMG">
+
+          </div>
+          
+        </div>
+        <div class="middleSector">
+          <div class="WinOrLoose"  style="display: none">
+           YOU WIN
+          </div>
+          <div class="againstPC"  style="display: none">
+            AGAINST PC
+          </div>
+          <div class="replayButton"  style="display: none">
+            <button class="replay">PLAY AGAIN</button>
+          </div>
+        </div>
+        <div class="computerSide">
+          <div class="computerText">
+            COMPUTER PICKED
+          </div>
+         <div class="waveStyling_comp"  style="display: none">
+           <img src="ellipse1.png" class="el-1">
+          <img src="ellipse2.png" class="el-2">
+          <img src="ellipse3.png" class="el-3">
+        </div>
+       
+          <img src="" class="computerSideLargeIMG">
+          
+          <div class="computerSide_img">
+            <img src="" class="computerSideSmallIMG">
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="rules">RULES</div>
+
+    <div id="hiddenDivision" style="display: none">
+      <!-- This content is only visible when the Rule button is pressed.
+      this is for content pop-up -->
+      <h3>Game Rule</h3>
+
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>
+          Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle minor decisions or simply play to
+          pass the time
+        </li>
+        <li>
+          If both players lay down the same hand, each player lays down another
+          hand
+        </li>
+      </ul>
+    </div>
+
+    <div id="nextButton" style="display: none;">NEXT</div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
